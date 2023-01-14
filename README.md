@@ -10,7 +10,7 @@ To start the server, create a `.env` file using `example.env`, from the command 
 Default login details:
 
     username: admin
-    password: admin
+    password: password
 
 *Note that you may need to refresh the login screen after initial attempt*
 

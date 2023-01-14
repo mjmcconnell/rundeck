@@ -18,8 +18,10 @@ services:
     ports:
       - 4440:4440
     volumes:
-      - ./rundeck/job_templates:/home/rundeck/job_templates
-      - ./rundeck/scripts:/home/rundeck/scripts
+      - ./rundeck/config/jaas-loginmodule.conf:/home/rundeck/server/config/jaas-loginmodule.conf
+      - ./rundeck/config/log4j2.properties:/home/rundeck/server/config/log4j2.properties
+      - ./rundeck/config/realm.properties:/home/rundeck/server/config/realm.properties
+      - ./rundeck/config/ssl.properties:/home/rundeck/server/config/ssl.properties
 
   postgres:
     image: postgres
